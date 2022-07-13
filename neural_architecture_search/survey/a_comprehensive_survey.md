@@ -45,7 +45,8 @@ Previous survey focus on categorizing researchs based on basic components of NAS
 
 > representation shift problem:
 
-> multi-model forgetting: In case of weight sharing model, training new neural architecture leads to redcue the perforamnce of previous neural architecture.
+> multi-model forgetting: \
+> In case of weight sharing model, training new neural architecture leads to redcue the perforamnce of previous neural architecture.
 
 ---
 
@@ -63,7 +64,13 @@ These early NAS methods has four limitations.
 3. Search from scratch ?
 4. Fully trained ?
 
+Search space -> NASNet, MNASNet -> how to handle skip connection in NAS? 
+MNASnet -> repeating structure
+
 
 ---
+> Definition of search space  in NAS: \
+> predefined candidate operations sets + hyper-parameters( architecture template, connnection method, # of layer channel)
 
 > Evolutionary algroithms(EAs)
+
