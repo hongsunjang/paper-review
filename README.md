@@ -1,5 +1,12 @@
 # paper-review
 ---
+
+## Neural Architecture search
+|Category|
+|:--:|
+|Survey|
+|one_shot| 
+
 ## Distributed learning
 |paper|year|arxiv|
 |:--:|:--:|:--:|
