@@ -27,5 +27,6 @@ NASPipe의 insight
 2.  swap in the context of subnets to be executed 가 시간에 큰 차지를 하는 것을 발견 (VPIPE에서 제시한것 같다.)
 => DNN computation time is roughly deterministic
 
+![comparison](images/comparison.png)
 
 
