@@ -30,3 +30,29 @@ NASPipe의 insight
 ![comparison](images/comparison.png)
 
 
+## Background
+
+1. reproducibility for supernet => 재 구현 했을 때 동일성
+- intra-subnet
+쉽다! 왜냐하면 layer에서 하나의 candidate만 겹치므로
+
+- inter subnet reproducibility
+어렵다, 특히 병렬 처리 상황에서 더 어렵다.
+왜냐하면 casual depedency 발생
+
+reproducibility는연구적 측면에서 중요
+
+2. how to parallel the task?
+
+Retiarii와 NASPipe는  inter-subnet parlalle task 
+을 지지한다 -> multiple subnet with one input batch
+
+다른 방법인 intra-subnet parallel task는 -> micro batch를 쓰는 것이다
+
+왜 inter-subnet parallel task가 더 좋을까?
+-> intra subnet parallel은 large batch size 일때 GPU utilization이 효과적으로 쓰일 수 있다.
+
+Retiarii와 다른점은 뭘까? ratiarii는 selected parallelism을 써서 subnet를 결정해서 한 GPU가 그 subnet train을 처리하게 만든다. 그와 달리 NASPipe는 pipeline parallelism을 사용하여 메모리도 아까고, scalablity가 좋다.
+
+
+
